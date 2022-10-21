@@ -181,7 +181,7 @@ void LCD_VidDrawChar(u8 arr[], u8 pos, u8 row, u8 col){
 }
 /* Function to send a floating number to LCD
  * options:
- * num : range[1.7E-308 - 1.7E+308] (number to be printed)
+ * num : range[-1.7E-308 - 1.7E+308] (number to be printed)
 */
 void LCD_VidSendFloatingNumber(f64 num){
 	if (num<0){
