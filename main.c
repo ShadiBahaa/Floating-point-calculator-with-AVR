@@ -286,8 +286,8 @@ u8 precedence(u8 op) {
 }
 /* Performs the necessary calculations (addition, subtraction, multiplication, division)
  * input options:
- * operandOne: range[DBL_MIN - DBL_MAX] the first operand in the expression
- * operandTwo: range[DBL_MIN - DBL_MAX] the second operand in the expression
+ * operandOne: range[-DBL_MAX - DBL_MAX] the first operand in the expression
+ * operandTwo: range[-DBL_MAX - DBL_MAX] the second operand in the expression
  * operation : one of the following operations (+ , - , / , x)
  * result:
  * No underflow/ overflow/ zeroDivision -> result of operations as double
