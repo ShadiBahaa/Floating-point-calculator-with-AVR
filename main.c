@@ -304,7 +304,7 @@ f64 calc(f64 operandOne, u8 operation, f64 operandTwo) {
 		return operandOne + operandTwo;
 	/* subtraction */
 	case '-':
-		if (operandOne < (-1 * DBL_MIN) - operandTwo) {
+		if (operandOne < (-1 * DBL_MAX) - operandTwo) {
 			underFlow = 1;
 			return 0;
 		}
@@ -322,7 +322,7 @@ f64 calc(f64 operandOne, u8 operation, f64 operandTwo) {
 			zeroDiv = 1;
 			return 0;
 		}
-		if (operandOne < -1 * DBL_MIN * operandTwo) {
+		if (operandOne < -1 * DBL_MAX * operandTwo) {
 			underFlow = 1;
 			return 0;
 		}
